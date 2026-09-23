@@ -1,0 +1,175 @@
+metric,value,unit,condition,note
+extinction_probability_q,0.932342,probability,"R0=1.5, k=0.1, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.067658,probability,"R0=1.5, k=0.1, n=1",P_establish = 1 - q
+extinction_probability_q,0.860685,probability,"R0=2.5, k=0.1, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.139315,probability,"R0=2.5, k=0.1, n=1",P_establish = 1 - q
+extinction_probability_q,0.804287,probability,"R0=4.0, k=0.1, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.195713,probability,"R0=4.0, k=0.1, n=1",P_establish = 1 - q
+extinction_probability_q,0.767592,probability,"R0=1.5, k=0.5, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.232408,probability,"R0=1.5, k=0.5, n=1",P_establish = 1 - q
+extinction_probability_q,0.558258,probability,"R0=2.5, k=0.5, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.441742,probability,"R0=2.5, k=0.5, n=1",P_establish = 1 - q
+extinction_probability_q,0.421535,probability,"R0=4.0, k=0.5, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.578465,probability,"R0=4.0, k=0.5, n=1",P_establish = 1 - q
+extinction_probability_q,0.666667,probability,"R0=1.5, k=1, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.333333,probability,"R0=1.5, k=1, n=1",P_establish = 1 - q
+extinction_probability_q,0.4,probability,"R0=2.5, k=1, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.6,probability,"R0=2.5, k=1, n=1",P_establish = 1 - q
+extinction_probability_q,0.25,probability,"R0=4.0, k=1, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.75,probability,"R0=4.0, k=1, n=1",P_establish = 1 - q
+extinction_probability_q,0.575028,probability,"R0=1.5, k=2, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.424972,probability,"R0=1.5, k=2, n=1",P_establish = 1 - q
+extinction_probability_q,0.275305,probability,"R0=2.5, k=2, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.724695,probability,"R0=2.5, k=2, n=1",P_establish = 1 - q
+extinction_probability_q,0.133975,probability,"R0=4.0, k=2, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.866025,probability,"R0=4.0, k=2, n=1",P_establish = 1 - q
+extinction_probability_q,0.417188,probability,"R0=1.5, k=Poisson, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.582812,probability,"R0=1.5, k=Poisson, n=1",P_establish = 1 - q
+extinction_probability_q,0.107355,probability,"R0=2.5, k=Poisson, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.892645,probability,"R0=2.5, k=Poisson, n=1",P_establish = 1 - q
+extinction_probability_q,0.019827,probability,"R0=4.0, k=Poisson, n=1",probability one imported case fails to ignite transmission
+establishment_probability_n1,0.980173,probability,"R0=4.0, k=Poisson, n=1",P_establish = 1 - q
+establishment_probability_n,0.139315,probability,"R0=2.5, k=0.1, n=1",P_establish = 1 - q**n
+establishment_probability_n,0.776928,probability,"R0=2.5, k=0.1, n=10",P_establish = 1 - q**n
+establishment_probability_n,1.0,probability,"R0=2.5, k=0.1, n=100",P_establish = 1 - q**n
+establishment_probability_n,0.441742,probability,"R0=2.5, k=0.5, n=1",P_establish = 1 - q**n
+establishment_probability_n,0.99706,probability,"R0=2.5, k=0.5, n=10",P_establish = 1 - q**n
+establishment_probability_n,1.0,probability,"R0=2.5, k=0.5, n=100",P_establish = 1 - q**n
+establishment_probability_n,0.892645,probability,"R0=2.5, k=Poisson, n=1",P_establish = 1 - q**n
+establishment_probability_n,1.0,probability,"R0=2.5, k=Poisson, n=10",P_establish = 1 - q**n
+establishment_probability_n,1.0,probability,"R0=2.5, k=Poisson, n=100",P_establish = 1 - q**n
+overdispersion_risk_ratio,0.156069,ratio,"R0=2.5, k=0.1 vs Poisson",establishment probability relative to the Poisson benchmark
+overdispersion_absolute_gap,0.75333,probability,"R0=2.5, k=0.1 vs Poisson",Poisson minus k=0.1 establishment probability
+expected_imports_per_establishment,14.7803,cases,"R0=1.5, k=0.1",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,10.0,cases,"R0=1.5, k=0.1",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,43.0,cases,"R0=1.5, k=0.1",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,7.178,cases,"R0=2.5, k=0.1",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,5.0,cases,"R0=2.5, k=0.1",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,20.0,cases,"R0=2.5, k=0.1",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,5.1095,cases,"R0=4.0, k=0.1",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,4.0,cases,"R0=4.0, k=0.1",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,14.0,cases,"R0=4.0, k=0.1",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,4.3028,cases,"R0=1.5, k=0.5",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,3.0,cases,"R0=1.5, k=0.5",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,12.0,cases,"R0=1.5, k=0.5",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,2.2638,cases,"R0=2.5, k=0.5",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,2.0,cases,"R0=2.5, k=0.5",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,6.0,cases,"R0=2.5, k=0.5",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,1.7287,cases,"R0=4.0, k=0.5",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,1.0,cases,"R0=4.0, k=0.5",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,4.0,cases,"R0=4.0, k=0.5",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,3.0,cases,"R0=1.5, k=1",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,2.0,cases,"R0=1.5, k=1",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,8.0,cases,"R0=1.5, k=1",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,1.6667,cases,"R0=2.5, k=1",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,1.0,cases,"R0=2.5, k=1",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,4.0,cases,"R0=2.5, k=1",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,1.3333,cases,"R0=4.0, k=1",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,1.0,cases,"R0=4.0, k=1",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,3.0,cases,"R0=4.0, k=1",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,1.7158,cases,"R0=1.5, k=Poisson",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,1.0,cases,"R0=1.5, k=Poisson",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,4.0,cases,"R0=1.5, k=Poisson",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,1.1203,cases,"R0=2.5, k=Poisson",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,1.0,cases,"R0=2.5, k=Poisson",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,2.0,cases,"R0=2.5, k=Poisson",smallest n with 1 - q**n >= 0.95
+expected_imports_per_establishment,1.0202,cases,"R0=4.0, k=Poisson",1 / (1 - q): mean number of imported cases per successful establishment if imports are independent
+n_imports_for_0.5_establishment,1.0,cases,"R0=4.0, k=Poisson",smallest n with 1 - q**n >= 0.5
+n_imports_for_0.95_establishment,1.0,cases,"R0=4.0, k=Poisson",smallest n with 1 - q**n >= 0.95
+generations_to_within_5pct_of_ultimate,5.0,generations,"R0=2.5, k=0.1",first g with P_survive(g) <= 1.05 * P_survive(infinity)
+p_survive_g1_over_ultimate,1.9959,ratio,"R0=2.5, k=0.1",P_survive(g=1) relative to the limiting value
+generations_to_within_5pct_of_ultimate,4.0,generations,"R0=2.5, k=0.5",first g with P_survive(g) <= 1.05 * P_survive(infinity)
+p_survive_g1_over_ultimate,1.3396,ratio,"R0=2.5, k=0.5",P_survive(g=1) relative to the limiting value
+generations_to_within_5pct_of_ultimate,1.0,generations,"R0=2.5, k=Poisson",first g with P_survive(g) <= 1.05 * P_survive(infinity)
+p_survive_g1_over_ultimate,1.0283,ratio,"R0=2.5, k=Poisson",P_survive(g=1) relative to the limiting value
+seasonal_max_establishment,0.224507,probability,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",annual maximum of the within-season establishment probability
+seasonal_optimal_introduction_day,170.0,day-of-year,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",day at which the establishment probability peaks
+vulnerable_window_length_thr0.05,109.0,days,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",days with P >= 0.05; from day 108 to day 216
+vulnerable_window_start_thr0.05,108.0,day-of-year,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_end_thr0.05,216.0,day-of-year,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_length_thr0.1,85.0,days,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",days with P >= 0.1; from day 123 to day 207
+vulnerable_window_start_thr0.1,123.0,day-of-year,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_end_thr0.1,207.0,day-of-year,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",
+seasonal_min_establishment,0.0,probability,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6",annual minimum of the establishment probability
+seasonal_max_establishment,0.428975,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",annual maximum of the within-season establishment probability
+seasonal_optimal_introduction_day,178.0,day-of-year,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",day at which the establishment probability peaks
+vulnerable_window_length_thr0.05,152.0,days,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",days with P >= 0.05; from day 87 to day 238
+vulnerable_window_start_thr0.05,87.0,day-of-year,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_end_thr0.05,238.0,day-of-year,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_length_thr0.1,135.0,days,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",days with P >= 0.1; from day 98 to day 232
+vulnerable_window_start_thr0.1,98.0,day-of-year,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_end_thr0.1,232.0,day-of-year,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",
+seasonal_min_establishment,0.0,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",annual minimum of the establishment probability
+seasonal_max_establishment,0.5726,probability,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",annual maximum of the within-season establishment probability
+seasonal_optimal_introduction_day,183.0,day-of-year,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",day at which the establishment probability peaks
+vulnerable_window_length_thr0.05,182.0,days,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",days with P >= 0.05; from day 72 to day 253
+vulnerable_window_start_thr0.05,72.0,day-of-year,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_end_thr0.05,253.0,day-of-year,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_length_thr0.1,169.0,days,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",days with P >= 0.1; from day 81 to day 249
+vulnerable_window_start_thr0.1,81.0,day-of-year,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",
+vulnerable_window_end_thr0.1,249.0,day-of-year,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",
+seasonal_min_establishment,2e-08,probability,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6",annual minimum of the establishment probability
+seasonal_max_establishment_by_k,0.135923,probability,"R0_peak=2.5, w=55, tau=15, k=0.1, g=6","annual maximum, dispersion sensitivity"
+seasonal_max_establishment_by_k,0.428975,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6","annual maximum, dispersion sensitivity"
+seasonal_max_establishment_by_k,0.709629,probability,"R0_peak=2.5, w=55, tau=15, k=2, g=6","annual maximum, dispersion sensitivity"
+seasonal_max_establishment_by_k,0.883334,probability,"R0_peak=2.5, w=55, tau=15, k=Poisson, g=6","annual maximum, dispersion sensitivity"
+seasonal_max_establishment_sensitivity,0.431681,probability,"R0_peak=2.5, w=40, tau=10, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.41077,probability,"R0_peak=2.5, w=40, tau=15, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.36734,probability,"R0_peak=2.5, w=40, tau=20, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.437704,probability,"R0_peak=2.5, w=55, tau=10, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.428975,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.413394,probability,"R0_peak=2.5, w=55, tau=20, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.44005,probability,"R0_peak=2.5, w=70, tau=10, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.435177,probability,"R0_peak=2.5, w=70, tau=15, k=0.5, g=6",season width and generation-time sensitivity
+seasonal_max_establishment_sensitivity,0.427263,probability,"R0_peak=2.5, w=70, tau=20, k=0.5, g=6",season width and generation-time sensitivity
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=1.5, w=40, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=1.5, w=40, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=1.5, w=55, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=1.5, w=55, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=1.5, w=70, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=1.5, w=70, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=2.5, w=40, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=2.5, w=40, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=2.5, w=55, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=2.5, w=55, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=2.5, w=70, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=2.5, w=70, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=4.0, w=40, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=4.0, w=40, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.0,probability,"R0_peak=4.0, w=55, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,0.0,0/1,"R0_peak=4.0, w=55, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+periodic_steadystate_max_establishment,0.48175004,probability,"R0_peak=4.0, w=70, tau=15, k=0.5",1 - q(t) in the periodic steady state; 0 means the seasonal cycle is subcritical and persistence is impossible
+seasonal_cycle_supercritical,1.0,0/1,"R0_peak=4.0, w=70, tau=15, k=0.5",1 iff the product of generation means around the seasonal cycle exceeds 1
+critical_R0_peak_threshold,32.1367,R0,"w=40, tau=15, t_peak=190",minimum R0_peak for which the seasonal cycle is supercritical (periodic persistence possible)
+critical_R0_peak_threshold,6.2675,R0,"w=55, tau=15, t_peak=190",minimum R0_peak for which the seasonal cycle is supercritical (periodic persistence possible)
+critical_R0_peak_threshold,3.1051,R0,"w=70, tau=15, t_peak=190",minimum R0_peak for which the seasonal cycle is supercritical (periodic persistence possible)
+annual_max_establishment_under_control,0.181558,probability,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.1, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.191303,fraction,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.1, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,97.0,days,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.1, g=6, threshold=0.05",
+annual_max_establishment_under_control,0.09376,probability,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.3, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.582376,fraction,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.3, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,63.0,days,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.3, g=6, threshold=0.05",
+annual_max_establishment_under_control,0.027062,probability,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.5, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.879461,fraction,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.5, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,0.0,days,"R0_peak=1.5, w=55, tau=15, k=0.5, theta=0.5, g=6, threshold=0.05",
+theta_required_for_target,0.417233,fraction of R0,"R0_peak=1.5, w=55, tau=15, k=0.5, g=6, target=0.05",theta s.t. annual max P_est = 0.05; brentq root
+annual_max_establishment_under_control,0.390181,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.1, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.090436,fraction,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.1, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,144.0,days,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.1, g=6, threshold=0.05",
+annual_max_establishment_under_control,0.28918,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.3, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.325881,fraction,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.3, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,123.0,days,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.3, g=6, threshold=0.05",
+annual_max_establishment_under_control,0.151921,probability,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.5, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.645852,fraction,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.5, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,89.0,days,"R0_peak=2.5, w=55, tau=15, k=0.5, theta=0.5, g=6, threshold=0.05",
+theta_required_for_target,0.65034,fraction of R0,"R0_peak=2.5, w=55, tau=15, k=0.5, g=6, target=0.05",theta s.t. annual max P_est = 0.05; brentq root
+annual_max_establishment_under_control,0.544375,probability,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.1, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.049292,fraction,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.1, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,176.0,days,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.1, g=6, threshold=0.05",
+annual_max_establishment_under_control,0.46797,probability,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.3, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.182727,fraction,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.3, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,160.0,days,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.3, g=6, threshold=0.05",
+annual_max_establishment_under_control,0.344089,probability,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.5, g=6",annual maximum of P_est(t) when R0 is scaled by (1 - theta)
+control_relative_reduction,0.399077,fraction,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.5, g=6",relative drop of the annual maximum vs theta = 0
+vulnerable_window_length_under_control,135.0,days,"R0_peak=4.0, w=55, tau=15, k=0.5, theta=0.5, g=6, threshold=0.05",
+theta_required_for_target,0.781462,fraction of R0,"R0_peak=4.0, w=55, tau=15, k=0.5, g=6, target=0.05",theta s.t. annual max P_est = 0.05; brentq root
