@@ -2,7 +2,7 @@
 make_figures.py
 ===============
 Draws every figure for the manuscript and writes PNG (600 dpi) + PDF (vector)
-+ TIFF (LZW compressed) into ../02 Figures/ .
++ TIFF (LZW compressed) into ./figures/ (created if absent).
 
 Figures
 -------
@@ -19,7 +19,7 @@ Run:  ../.venv/bin/python make_figures.py
 Style: white background, sans-serif, low-saturation ColorBrewer-like palettes.
 English only -- no CJK characters anywhere.
 
-Journal (Mathematical Biosciences / Elsevier) compliance
+Figure preparation: vector PDF plus 300 dpi raster output
 --------------------------------------------------
   * resolution must be MORE than 300 dpi  -> exported at 600 dpi
   * figures submitted as separate files in JPEG or TIFF
@@ -45,7 +45,7 @@ from PIL import Image
 import branching_model as bm
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.abspath(os.path.join(HERE, "..", "02 Figures"))
+OUT = os.path.abspath(os.path.join(HERE, "figures"))
 os.makedirs(OUT, exist_ok=True)
 
 DPI = 600

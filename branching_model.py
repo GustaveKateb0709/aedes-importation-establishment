@@ -30,7 +30,7 @@ Conventions
   * `k = np.inf` selects the Poisson limit.
   * Arrays of scenarios are stored row-wise: shape (m, 365).
 
-Author: analysis pipeline for Mathematical Biosciences submission.  All identifiers/comments in English.
+Branching-process model and analysis pipeline. All identifiers and comments in English.
 """
 
 from __future__ import annotations

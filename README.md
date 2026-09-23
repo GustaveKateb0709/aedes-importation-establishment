@@ -15,13 +15,13 @@ proprietary dependencies.
 
 ```bash
 # one-off: create the environment (Python 3.13, numpy/scipy/matplotlib/pandas)
-uv venv .venv --python 3.13
-uv pip install --python .venv/bin/python numpy scipy matplotlib pandas
+python3 -m venv .venv
+.venv/bin/pip install numpy scipy matplotlib pandas
 
 # then, from this directory, in this order:
 .venv/bin/python montecarlo_check.py    # ~13 s   validation, writes montecarlo_validation.csv
 .venv/bin/python run_analysis.py        # ~1 s    full grid, writes the fig*_*.csv + key_summary.csv
-.venv/bin/python make_figures.py        # ~10 s   writes PNG (300 dpi) + PDF into ../02 Figures/
+.venv/bin/python make_figures.py        # ~10 s   writes PNG (300 dpi) + PDF into ./figures/ (created automatically)
 ```
 
 Everything is deterministic: all random draws use `numpy.random.default_rng(20260906)`
